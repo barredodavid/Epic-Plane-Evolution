@@ -1,0 +1,13 @@
+Plane models from Poly Pizza (poly.pizza), licensed CC-BY 3.0 (https://creativecommons.org/licenses/by/3.0/):
+- "Paper Plane" by Anonymous - https://poly.pizza/m/10BzsZ9cTGW
+- "AIRCO DH2 v2" by Joshua Johanson - https://poly.pizza/m/9iVI9GHMleJ
+- "Small Airplane" by Vojtech Balak - https://poly.pizza/m/7cvx6ex-xfL
+- "Jet" by Poly by Google - https://poly.pizza/m/bgUY8zN2Bq9
+- "Rocket ship" by Poly by Google - https://poly.pizza/m/4mPkOKdzAk-
+
+Trees and bush: "Ultimate Nature Pack" by Quaternius (quaternius.com), CC0 - no attribution required.
+
+Sound effects: Interface Sounds, Impact Sounds, Digital Audio, Sci-fi Sounds, Casino Audio by Kenney (kenney.nl), CC0 - no attribution required.
+Font: Lilita One by Juan Montoreano, SIL Open Font License 1.1 (see Assets/_Project/Fonts/OFL.txt).
+
+Music (montage only): "Pixelland" Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0 (http://creativecommons.org/licenses/by/4.0/).
