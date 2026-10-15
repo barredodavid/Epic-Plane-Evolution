@@ -77,3 +77,6 @@ crashlytics-build.properties
 /Recordings/
 /Data/
 .claude/
+
+# Playable ad build
+Playable/node_modules/

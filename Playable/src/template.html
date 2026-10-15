@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Plane models from Poly Pizza, CC-BY 3.0: "Paper Plane" by Anonymous, "AIRCO DH2 v2" by Joshua Johanson,
+     "Small Airplane" by Vojtech Balak, "Jet" and "Rocket ship" by Poly by Google. Sounds by Kenney (CC0).
+     Font: Lilita One by Juan Montoreano (SIL OFL 1.1). Built with three.js (MIT). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="ad.size" content="width=320,height=480">
+<title>Plane Evolution · Playable Ad</title>
+<style>
+  @font-face { font-family: Lilita; src: url(data:font/ttf;base64,__FONT__) format("truetype"); }
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #9ecbff; touch-action: none;
+               user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; }
+  canvas { display: block; }
+  .t { position: fixed; left: 0; right: 0; text-align: center; font-family: Lilita, Impact, sans-serif; color: #fff;
+       line-height: 1.05; pointer-events: none; letter-spacing: .02em;
+       -webkit-text-stroke: .14em #0d1438; paint-order: stroke fill;
+       text-shadow: .06em .12em 0 rgba(13, 20, 56, .55); }
+  #year { top: 4vh; --s: min(11vw, 6.2vh); font-size: var(--s); }
+  #popup { top: 14vh; color: #ffe14d; }
+  #popup.pop { animation: pop .25s ease-out; }
+  @keyframes pop { from { transform: scale(1.5); } to { transform: scale(1); } }
+
+  #tutorial { position: fixed; inset: auto 0 14vh 0; text-align: center; pointer-events: none; transition: opacity .3s; }
+  #tutorial .hand { font-size: min(18vw, 11vh); display: inline-block; animation: swipe 1.4s ease-in-out infinite; }
+  #tutorial .t { position: static; font-size: min(10vw, 6vh); margin-top: 1vh; }
+  @keyframes swipe { 0%, 100% { transform: translateX(-22vw) rotate(-10deg); } 50% { transform: translateX(22vw) rotate(10deg); } }
+  .hide { opacity: 0; pointer-events: none !important; }
+
+  #end { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+         gap: 3vh; background: rgba(8, 18, 52, .72); transition: opacity .35s; }
+  #end .t { position: static; }
+  #end h1 { margin: 0; font-size: min(13vw, 7.5vh); color: #ffe14d; font-weight: normal; }
+  #result { font-size: min(7vw, 4vh); }
+  #cta { pointer-events: auto; border: 0; border-radius: 999px; padding: 2.2vh 12vw; font: min(9vw, 5.4vh) Lilita, Impact, sans-serif;
+         color: #fff; background: linear-gradient(#4cd964, #22a83a); box-shadow: 0 .9vh 0 #157a28, 0 1.6vh 3vh rgba(0, 0, 0, .35);
+         -webkit-text-stroke: .1em #0d4a18; paint-order: stroke fill; animation: pulse 1s ease-in-out infinite; cursor: pointer; }
+  @keyframes pulse { 50% { transform: scale(1.08); } }
+  #replay { pointer-events: auto; background: none; border: 0; color: #cfe0ff; font: min(5vw, 3vh) Lilita, Impact, sans-serif;
+            text-decoration: underline; cursor: pointer; }
+  #credit { position: absolute; bottom: 2vh; left: 0; right: 0; text-align: center; color: #9fb3e0;
+            font: min(3.4vw, 1.9vh) system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div id="year" class="t" data-size="min(11vw, 6.2vh)"></div>
+<div id="popup" class="t" data-size="min(12vw, 7vh)"></div>
+<div id="tutorial">
+  <div class="hand">👆</div>
+  <div class="t">DRAG TO STEER</div>
+</div>
+<div id="end" class="hide">
+  <h1 id="title" class="t"></h1>
+  <div id="result" class="t"></div>
+  <button id="cta">PLAY NOW</button>
+  <button id="replay">Replay</button>
+  <div id="credit">Fan-made demo by David Barredo · not affiliated with Voodoo</div>
+</div>
+<script>window.ASSETS = __ASSETS__;</script>
+<script>__BUNDLE__</script>
+</body>
+</html>

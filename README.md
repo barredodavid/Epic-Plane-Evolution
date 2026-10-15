@@ -33,6 +33,18 @@ iterate on the hook of the winning ad.
 
 The web build is the playable version: hold and drag to steer, tap to retry.
 
+## Playable ad
+
+[`Playable/`](Playable) ports the same level to a **playable ad**: one self-contained HTML file of 1.3 MB
+([`Playable/dist/planes-playable.html`](Playable/dist/planes-playable.html)), under the 5 MB limit of most ad networks.
+
+- Tutorial hand, ~20 seconds of play, the three endings of the Unity version (paper plane crash, short landing,
+  rockets to space), then an end card with a "Play Now" button.
+- The button uses MRAID (`mraid.open`) or the Facebook playable API when the ad network provides them.
+- three.js, bundled with esbuild; models (shrunk with gltf-transform), sounds and font are inlined as base64.
+- `npm install`, then `npm run build`. `npm run serve` previews it on http://localhost:8771/planes-playable.html
+  (`?auto=good` or `?auto=bad` plays it on its own, for testing).
+
 ## Run it
 
 1. Unity **6000.5** (built-in render pipeline). Open the folder with Unity Hub.
